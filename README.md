@@ -1,8 +1,5 @@
 # js-canvas
-Experimenting with JS and HTML5 Canvas
+*Experimenting with JS and HTML5 Canvas
 
-
-<ol>
-  <li><a href="">Garra Drawn with JS and HTML5 canvas.</a></li>
-  ![The Character Drawn](https://github.com/foxscripts/js-canvas/garra.png)
-</ol>
+  *Garra Drawn with HTML5 canvas.
+![the character drawn](https://github.com/foxscripts/js-canvas/garra.png "Character Drawn")
