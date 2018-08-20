@@ -1,0 +1,189 @@
+<!-- I didn't used looping because i think it will give it a more "hand drawn" feel -->
+<html>
+<head>
+	<title> Gaara </title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+		}
+		#mycanvas{
+			border: 1px solid #111;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="mycanvas">
+	</canvas>
+
+<script type="text/javascript">
+	var canvas = document.getElementById('mycanvas');
+	var ctx = canvas.getContext("2d");
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+
+	ctx.beginPath();
+	ctx.moveTo(490,350);	// lower cheek point
+	
+    ctx.quadraticCurveTo(518, 400, 550, 430);
+    ctx.bezierCurveTo(550, 432, 570, 435, 590, 430);	//chin
+
+    ctx.quadraticCurveTo(632, 380, 640, 350); 	//right cheek lower point
+    ctx.quadraticCurveTo(644, 310, 643, 280); 
+	ctx.moveTo(643, 280);	
+
+	//right eye
+    ctx.moveTo(633, 290);
+    ctx.quadraticCurveTo(590, 285, 585, 310);
+    ctx.quadraticCurveTo(630, 321, 633, 290);
+	//inner eyelid outline
+    ctx.quadraticCurveTo(596, 290, 590, 307);
+    ctx.quadraticCurveTo(620, 315, 633, 290);
+    //pupil
+    ctx.moveTo(605, 293.5);
+    ctx.quadraticCurveTo(597, 300, 603,308);
+    ctx.moveTo(612, 292);
+    ctx.quadraticCurveTo(620, 303, 613,307);
+
+
+    //left eye
+    ctx.moveTo(493, 293);
+    ctx.quadraticCurveTo(529, 285, 545, 310);
+    ctx.quadraticCurveTo(505, 325, 493, 293);
+    //inner eyelid outline
+    ctx.quadraticCurveTo(523, 291, 540, 308);
+    ctx.quadraticCurveTo(515, 320, 493, 293);
+    //pupil
+    ctx.moveTo(515, 293.5);
+    ctx.quadraticCurveTo(508, 303, 515, 309);
+    ctx.moveTo(523, 297);
+    ctx.quadraticCurveTo(532, 301, 523, 311);
+
+    //nose
+    ctx.moveTo(565, 328);
+    ctx.lineTo(565, 345);
+
+    //mouth
+    ctx.moveTo(545, 380);
+    ctx.lineTo(555, 375);
+    ctx.quadraticCurveTo(575, 375, 587, 380);
+    ctx.moveTo(555, 383);
+    ctx.quadraticCurveTo(560, 385, 574, 383);
+
+	//neck
+	ctx.moveTo(528, 438);
+	ctx.lineTo(530, 409);
+	ctx.moveTo(611, 438);
+	ctx.lineTo(610, 405);
+
+	//hairs   
+    ctx.moveTo(490, 350);
+	ctx.quadraticCurveTo(477, 300, 490, 285);
+	ctx.moveTo(480, 300);
+	ctx.quadraticCurveTo(477, 290, 485, 260);
+	ctx.moveTo(480, 300);
+	ctx.lineTo(500, 270);//hair line left side over ear
+	//hairs 	
+	ctx.lineTo(500, 267);
+	ctx.lineTo(498, 280);
+	ctx.lineTo(514, 260);
+	ctx.lineTo(515, 240);
+	ctx.lineTo(513, 280);
+	ctx.quadraticCurveTo(528, 255, 535, 250);
+	ctx.lineTo(540, 230);
+	ctx.quadraticCurveTo(535, 230, 530, 280);
+	ctx.quadraticCurveTo(550, 230, 555, 230);
+	ctx.quadraticCurveTo(550, 230, 555, 230);
+	ctx.lineTo(559, 220);
+	ctx.moveTo(555, 230);
+	ctx.quadraticCurveTo(534, 270, 535, 295);
+	ctx.quadraticCurveTo(558, 250, 580, 230);
+	ctx.lineTo(583, 220);
+	ctx.moveTo(580,230);
+	ctx.quadraticCurveTo(584, 250, 565, 285);
+	ctx.quadraticCurveTo(607, 230, 605, 225);
+	ctx.quadraticCurveTo(625, 280, 620, 283);
+	ctx.quadraticCurveTo(630, 240, 630, 230);
+	ctx.lineTo(630, 220);
+	ctx.moveTo(630, 240);
+	ctx.lineTo(640, 300);
+	ctx.lineTo(644, 260);
+	ctx.moveTo(643, 280);
+	ctx.lineTo(647, 310);
+	ctx.lineTo(655, 280);
+
+	//hairs at top
+    ctx.moveTo(600, 160);
+    ctx.quadraticCurveTo(624, 152, 679, 153);
+    ctx.quadraticCurveTo(654, 160, 633, 173);
+    ctx.quadraticCurveTo(650, 174, 677, 193);
+    ctx.quadraticCurveTo(662, 201, 658, 200);
+    ctx.quadraticCurveTo(670, 202, 694, 220);
+    ctx.quadraticCurveTo(680, 223, 670, 230);
+    ctx.quadraticCurveTo(680, 235, 689, 254);
+    ctx.quadraticCurveTo(690, 245, 667, 260);
+    ctx.quadraticCurveTo(680, 266, 690, 295);
+    ctx.lineTo(667, 280);
+    ctx.lineTo(687, 335);
+    ctx.lineTo(659, 300);
+    ctx.lineTo(679, 360);
+    ctx.lineTo(653, 335);
+    ctx.lineTo(650, 400);
+    ctx.lineTo(635, 380);
+    ctx.lineTo(640, 410);
+    ctx.lineTo(620, 390);
+
+    ctx.moveTo(600, 160);
+    ctx.quadraticCurveTo(610, 130, 619, 123);
+    ctx.quadraticCurveTo(610, 120, 570, 163);
+    ctx.quadraticCurveTo(560, 125, 550, 110);
+    ctx.quadraticCurveTo(548, 175, 545, 170);
+    ctx.moveTo(547, 163);
+    ctx.quadraticCurveTo(530, 132, 470, 140);
+    ctx.quadraticCurveTo(500, 152, 540, 187);
+    ctx.moveTo(531, 180);
+    ctx.quadraticCurveTo(500, 152, 450, 180);
+    ctx.quadraticCurveTo(500, 192, 500, 190);
+    ctx.moveTo(485, 188);
+    ctx.lineTo(450, 210);
+    ctx.lineTo(480, 215);
+    ctx.quadraticCurveTo(460, 217, 440, 240);
+    ctx.quadraticCurveTo(460, 237, 470, 240);
+    ctx.quadraticCurveTo(440, 277, 450, 275);
+    ctx.quadraticCurveTo(475, 267, 468, 270);
+    ctx.lineTo(445, 300);
+    ctx.lineTo(465, 290);
+    ctx.lineTo(450, 330);
+    ctx.lineTo(470, 315);
+    ctx.lineTo(460, 370);
+    ctx.lineTo(474, 345);
+    ctx.lineTo(468, 390);
+    ctx.lineTo(488, 370);
+    ctx.lineTo(500, 410);
+    ctx.lineTo(510, 380);
+
+	//tatto on forehead
+	ctx.moveTo(613, 253);
+	ctx.lineTo(597, 257);
+	ctx.moveTo(615.5, 260);
+	ctx.lineTo(597, 265);
+	ctx.moveTo(597, 265);
+	ctx.lineTo(599, 259);
+	ctx.moveTo(597, 265);
+	ctx.lineTo(596, 273);
+	ctx.moveTo(610, 263);
+	ctx.lineTo(610, 257);
+	ctx.moveTo(600, 269);
+	ctx.lineTo(604, 266);
+	ctx.moveTo(603, 270);
+	ctx.lineTo(620, 281);
+	ctx.moveTo(608, 282);
+	ctx.lineTo(615, 268);
+	ctx.moveTo(603, 270);
+	ctx.lineTo(612, 265);
+	ctx.moveTo(603, 270);
+	ctx.lineTo(602, 276);
+	ctx.lineWidth = 3;  
+	ctx.stroke();
+</script>
+</body>
+</html>
